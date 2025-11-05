@@ -150,7 +150,7 @@ contract PointLedger is Ownable {
      * @param _pointsToAdd The point value from the newly minted SBT.
      */
     function addPoints(address _holder, uint256 _pointsToAdd) external onlySBTContract {
-        uint256 oldTotal = totalPoints[_holder];
+       // uint256 oldTotal = totalPoints[_holder];
         totalPoints[_holder] += _pointsToAdd;
         uint256 newTotal = totalPoints[_holder];
 
